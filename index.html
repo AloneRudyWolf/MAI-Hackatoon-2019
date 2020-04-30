@@ -1,0 +1,167 @@
+  
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Авиаперсонал</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
+    <link rel="stylesheet" href="animate.css">
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <img class="frfrfrfr" src="logo-fix.png">
+      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+      <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+      <a class="nav-link" href="autorization.html">
+      <button type="button" class="btn btn-outline-success">Войти</button></a>
+    </nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              <span data-feather="home"></span>
+              График 1 <span class="bar-chart-2"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="graph2.html">
+              <span data-feather="bar-chart-2"></span>
+              График 2
+            </a>
+          </li>
+          
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Кнопки для Кирюхи</span>
+          <a class="d-flex align-items-center text-muted" href="#">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Buttom 1
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Buttom 2
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Buttom 3
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Buttom 4
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">График</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#myModal" role="dialog" >
+  Поделиться
+</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        </button>
+        <h4 class="modal-title" id="myModal">Выберите соц.сеть</h4>
+      </div>
+       <div class="modal-body">
+        <a class="vkontakt" href="https://vk.com/futecky_kun">
+       <img  id="vkontakt" src="vk.png"></a>
+       <a class="vkontakt" href="https://github.com">
+       <img  id="vkontakt" src="github.png"></a>
+       <a class="vkontakt" href="https://gitlab.com">
+       <img  id="vkontakt" src="stck.png"></a>
+       <a class="vkontakt" href="https://stackoverflow.com">
+       <img  id="vkontakt" src="34.png"></a>
+       <a class="vkontakt" href="https://trello.com">
+       <img  id="vkontakt" src="trello.png"></a>
+        <a class="vkontakt" href="https://slack.com">
+       <img  id="vkontakt" src="slack.png"></a>
+       <a class="vkontakt" href="https://twitter.com">
+       <img  id="vkontakt" src="twitter.png"></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary">Выбрать</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+    </div>     
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="maingraph">
+     <canvas id="13" width="900" height="380"></canvas>
+    </div>
+     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Еще графики</h1>
+      </div>
+      <div class="container1">
+
+        <div class="graph_1 wow slideInLeft">
+          <canvas id="12" ></canvas>
+        </div>
+        <div class="graph_2 wow slideInRight">
+          <canvas id="14" ></canvas>
+        </div>
+      </div>
+      </div>
+      <p>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+           <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="dashboard.js"></script>
+        <script src="text.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="12.js"> </script>
+    <script src="13.js"> </script>
+    <script src="14.js"> </script>
+        
+        <script src="third_graph.js"></script>
+        <script src="wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+         </body>
+</html>

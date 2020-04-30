@@ -1,1 +1,1 @@
-MAI Hackatoon 2019
+MAI АвиаХакатун 2019

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bar Chart (chart.js)</title>
+        <meta charset="UTF-8">
+        <!-- Подключение библиотеки Chart -->
+        <script src="js/Chart.min.js"></script>
+        <!-- Подключение файлов данных -->
+        <script src="js/colors.js"></script>
+        <script src="js.data/line-data.js"></script>
+    </head>
+    <body>
+       <!-- Определение местоположения и размера диаграммы -->
+       <div id="container" style="border:1px solid #ccc;
+                           width:550px;height:370px;padding:5px">
+            <canvas id="chart" 
+                    width="540" height="360"></canvas>
+       </div>
+       <script>
+       <!-- Определение конфигурации диаграммы -->
+       var config = {
+            type: 'line',
+            data:barChartData
+       };
+       <!-- JavaScript создания диаграммы -->
+       window.onload = function() {
+         var ctx = document.getElementById("chart").getContext("2d");
+         window.line = new Chart(ctx, config);
+       };
+       </script>     
+    </body>
+</html>
